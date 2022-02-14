@@ -2,6 +2,25 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
+PASS src/HtmlCss.test.tsx
+  ● Console
+
+    console.error
+      Warning: validateDOMNesting(...): <body> cannot appear as a child of <header>.
+          at body
+          at header
+          at div
+          at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10081:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22707:5)
+
 PASS src/text.test.tsx
   ● Console
 
@@ -47,8 +66,8 @@ All files |     100 |      100 |     100 |     100 |
  App.tsx  |     100 |      100 |     100 |     100 |                   
 ----------|---------|----------|---------|---------|-------------------
 
-Test Suites: 2 passed, 2 total
-Tests:       2 passed, 2 total
+Test Suites: 3 passed, 3 total
+Tests:       9 passed, 9 total
 Snapshots:   0 total
-Time:        1.804 s
+Time:        3.28 s
 Ran all test suites.
