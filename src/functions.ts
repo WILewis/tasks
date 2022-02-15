@@ -59,3 +59,4 @@ export function convertYesNo(word: string): boolean | null {
     }
     return null;
 }
+//y can i not make another pull request?
