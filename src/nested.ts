@@ -1,7 +1,7 @@
 /*
 import { Answer } from "./interfaces/answer";
 import { Question, QuestionType } from "./interfaces/question";
-
+*/
 /**
  * Consumes an array of questions and returns a new array with only the questions
  * that are `published`.
@@ -10,7 +10,7 @@ import { Question, QuestionType } from "./interfaces/question";
 export function getPublishedQuestions(questions: Question[]): Question[] {
     return [];
 }
-
+*/
 /**
  * Consumes an array of questions and returns a new array of only the questions that are
  * considered "non-empty". An empty question has an empty string for its `body` and
@@ -20,7 +20,7 @@ export function getPublishedQuestions(questions: Question[]): Question[] {
 export function getNonEmptyQuestions(questions: Question[]): Question[] {
     return [];
 }
-
+*/
 /***
  * Consumes an array of questions and returns the question with the given `id`. If the
  * question is not found, return `null` instead.
@@ -32,7 +32,7 @@ export function findQuestion(
 ): Question | null {
     return null;
 }
-
+*/
 /**
  * Consumes an array of questions and returns a new array that does not contain the question
  * with the given `id`.
@@ -41,7 +41,7 @@ export function findQuestion(
 export function removeQuestion(questions: Question[], id: number): Question[] {
     return [];
 }
-
+*/
 /***
  * Consumes an array of questions and returns a new array containing just the names of the
  * questions, as an array.
@@ -50,7 +50,7 @@ export function removeQuestion(questions: Question[], id: number): Question[] {
 export function getNames(questions: Question[]): string[] {
     return [];
 }
-
+*/
 /***
  * Consumes an array of questions and returns the sum total of all their points added together.
  */
@@ -58,7 +58,7 @@ export function getNames(questions: Question[]): string[] {
 export function sumPoints(questions: Question[]): number {
     return 0;
 }
-
+*/
 /***
  * Consumes an array of questions and returns the sum total of the PUBLISHED questions.
  */
@@ -66,7 +66,7 @@ export function sumPoints(questions: Question[]): number {
 export function sumPublishedPoints(questions: Question[]): number {
     return 0;
 }
-
+*/
 /***
  * Consumes an array of questions, and produces a Comma-Separated Value (CSV) string representation.
  * A CSV is a type of file frequently used to share tabular data; we will use a single string
@@ -88,7 +88,7 @@ id,name,options,points,published
 export function toCSV(questions: Question[]): string {
     return "";
 }
-
+*/
 /**
  * Consumes an array of Questions and produces a corresponding array of
  * Answers. Each Question gets its own Answer, copying over the `id` as the `questionId`,
@@ -98,7 +98,7 @@ export function toCSV(questions: Question[]): string {
 export function makeAnswers(questions: Question[]): Answer[] {
     return [];
 }
-
+*/
 /***
  * Consumes an array of Questions and produces a new array of questions, where
  * each question is now published, regardless of its previous published status.
@@ -107,7 +107,7 @@ export function makeAnswers(questions: Question[]): Answer[] {
 export function publishAll(questions: Question[]): Question[] {
     return [];
 }
-
+*/
 /***
  * Consumes an array of Questions and produces whether or not all the questions
  * are the same type. They can be any type, as long as they are all the SAME type.
@@ -116,7 +116,7 @@ export function publishAll(questions: Question[]): Question[] {
 export function sameType(questions: Question[]): boolean {
     return false;
 }
-
+*/
 /***
  * Consumes an array of Questions and produces a new array of the same Questions,
  * except that a blank question has been added onto the end. Reuse the `makeBlankQuestion`
@@ -131,7 +131,7 @@ export function addNewQuestion(
 ): Question[] {
     return [];
 }
-
+*/
 /***
  * Consumes an array of Questions and produces a new array of Questions, where all
  * the Questions are the same EXCEPT for the one with the given `targetId`. That
@@ -145,7 +145,7 @@ export function renameQuestionById(
 ): Question[] {
     return [];
 }
-
+*/
 /***
  * Consumes an array of Questions and produces a new array of Questions, where all
  * the Questions are the same EXCEPT for the one with the given `targetId`. That
@@ -161,7 +161,7 @@ export function changeQuestionTypeById(
 ): Question[] {
     return [];
 }
-
+*/
 /**
  * Consumes an array of Questions and produces a new array of Questions, where all
  * the Questions are the same EXCEPT for the one with the given `targetId`. That
@@ -181,7 +181,7 @@ export function editOption(
 ) {
     return [];
 }
-
+*/
 /***
  * Consumes an array of questions, and produces a new array based on the original array.
  * The only difference is that the question with id `targetId` should now be duplicated, with
@@ -196,3 +196,4 @@ export function duplicateQuestionInArray(
 ): Question[] {
     return [];
 }
+*/
