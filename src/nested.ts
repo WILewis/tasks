@@ -300,11 +300,16 @@ export function editOption(
     questions.map((question: Question) => {
         if (question.id === targetId) {
             if (targetOptionIndex === -1) {
-                addOption(question, newOption);
+                question = addOption(question, newOption);
+                newQuestions.splice(newQuestions.length, 0, question);
             } else {
-                question.options[targetOptionIndex] = newOption;
+                const tquestion = {
+                    ...question,
+                    options: [...question.options]
+                };
+                tquestion.options.splice(targetOptionIndex, 1, newOption);
+                newQuestions.splice(newQuestions.length, 0, tquestion);
             }
-            newQuestions.splice(newQuestions.length, 0, question);
         } else {
             newQuestions.splice(newQuestions.length, 0, question);
         }
