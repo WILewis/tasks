@@ -154,7 +154,7 @@ export function addOption(question: Question, newOption: string): Question {
         ...question,
         options: [...question.options]
     };
-    cq.options.push(newOption);
+    cq.options.splice(cq.options.length, 0, newOption);
     return cq;
 }
 

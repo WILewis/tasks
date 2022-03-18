@@ -25,6 +25,8 @@ export function ChooseTeam(): JSX.Element {
         //using setAllOptions ?
         //test
         if (checkMember.length == 1000) {
+        //test?
+        if (allOptions.length == 1000) {
             setAllOptions([]);
         }
     }
