@@ -26,7 +26,6 @@ export function GiveAttempts(): JSX.Element {
     return (
         <div>
             <h3>Give Attempts</h3>
-            <Form.Label>Increase Attempt</Form.Label>
             <span>Attempts remaining: {attempts}</span>
             <Form.Control
                 type="number"
