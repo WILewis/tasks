@@ -40,7 +40,7 @@ export function ChangeColor(): JSX.Element {
                             label={color}
                             value={color}
                             checked={selection == color}
-                            style={{ backgroundColor: selection }}
+                            style={{ backgroundColor: color }}
                         />
                     ))}
                 </span>
